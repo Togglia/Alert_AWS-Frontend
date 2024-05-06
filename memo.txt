@@ -1,0 +1,23 @@
+혼자 진행하던 레포를 협업 레포로 import
+
+작업 후 원래 있던 레포를 먼저 github desktop에서 commit한 뒤  협업 레포에도 적용
+
+1. 새로운 레포지토리의 원격 url설정
+git remote add frontend-repo https://github.com/poramfe/Frontend
+//frontend-repo는 원격 레포를 구분하기 위한 별칭
+
+2. 변경 사항을 새로운 레포로 푸시
+git push frontend-repo main
+
+
+
+위 코드에서 "https://your-server-api-url.com/api/create-board" 부분을 실제 서버 API 주소로 변경해야 합니다. 서버 API 주소는 실제 서버의 엔드포인트에 따라 달라집니다. fetch 함수를 사용하여 해당 API로 POST 요청을 보낼 수 있으며, 서버에서 응답 상태 코드를 확인하여 작성 성공 여부를 판단할 수 있습니다.
+
+
+
+
+const LocalNickname = localStorage.getItem('userNickname');
+const setuserNicknameAtom = useSetRecoilState(userNicknameAtom);
+setuserNicknameAtom(LocalNickname);
+
+const writer = useRecoilValue(userNicknameAtom);
