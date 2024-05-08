@@ -174,7 +174,7 @@ const CreateBoardPage = () => {
 
     try {
       const response = await axios.post(
-        "http://10.250.2.115:4000/api/create-board",
+        "http://43.200.156.108:4000/api/create-board",
         {
           title,
           content,
