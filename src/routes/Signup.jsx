@@ -144,7 +144,7 @@ const Signup = () => {
        */
 
       const response = await axios.post(
-        "http://localhost:4000/api/auth/signUp",
+        "http://10.250.2.115:4000/api/auth/signUp",
         {
           userEmail,
           userPassword,

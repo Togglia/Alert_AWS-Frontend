@@ -166,7 +166,7 @@ const BoardDetail = () => {
     const fetchBoardDetail = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/api/board-detail/${boardId}`
+          `http://10.250.2.115:4000/api/board-detail/${boardId}`
         );
         setBoard(response.data.data);
       } catch (error) {
@@ -183,7 +183,7 @@ const BoardDetail = () => {
 
   const handleDelete = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/delete-board", {
+      const response = await fetch("http://10.250.2.115:4000/api/delete-board", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

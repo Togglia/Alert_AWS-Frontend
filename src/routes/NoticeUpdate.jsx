@@ -116,7 +116,7 @@ const NoticeUpdate = () => {
     const fetchBoardDetail = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/api/notice-detail/${boardId}`
+          `http://10.250.2.115:4000/api/notice-detail/${boardId}`
         );
         const { title, content } = response.data.data;
         setTitle(title);
@@ -134,7 +134,7 @@ const NoticeUpdate = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:4000/api/notice-board`,
+        `http://10.250.2.115:4000/api/notice-board`,
         {
           id: boardId,
           title: title,

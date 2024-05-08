@@ -318,7 +318,7 @@ const BoxGrid = () => {
   useEffect(() => {
     if (selectedBox) {
       axios
-        .get(`http://localhost:4000/api/videos/${videoId}/stream`, {
+        .get(`http://10.250.2.115:4000/api/videos/${videoId}/stream`, {
           responseType: "blob", // Blob 데이터 요청
         })
         .then((response) => {
