@@ -158,7 +158,7 @@ const Boards = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://43.200.156.108:4000/api/board-list"
+          "http://43.202.245.191:4000/api/board-list"
         );
         setBoardList(response.data.data); // 수정: response.data.data를 사용하여 게시물 데이터를 가져옵니다.
       } catch (error) {

@@ -116,7 +116,7 @@ const BoardUpdate = () => {
     const fetchBoardDetail = async () => {
       try {
         const response = await axios.get(
-          `http://43.200.156.108:4000/api/board-detail/${boardId}`
+          `http://43.202.245.191:4000/api/board-detail/${boardId}`
         );
         const { title, content } = response.data.data;
         setTitle(title);
@@ -134,7 +134,7 @@ const BoardUpdate = () => {
 
     try {
       const response = await axios.put(
-        `http://43.200.156.108:4000/api/update-board`,
+        `http://43.202.245.191:4000/api/update-board`,
         {
           id: boardId,
           title: title,

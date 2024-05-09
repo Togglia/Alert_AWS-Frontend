@@ -5,7 +5,7 @@ const NoticeList = () => {
 
   useEffect(() => {
     // 게시물 목록을 백엔드 API로부터 가져와 상태를 업데이트
-    fetch("http://43.200.156.108:4000/api/notice-list")
+    fetch("http://43.202.245.191:4000/api/notice-list")
       .then((response) => response.json())
       .then((data) => {
         setBoardList(data);

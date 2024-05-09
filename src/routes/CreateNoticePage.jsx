@@ -174,7 +174,7 @@ const CreateNoticePage = () => {
 
     try {
       const response = await axios.post(
-        "http://43.200.156.108:4000/api/create-notice",
+        "http://43.202.245.191:4000/api/create-notice",
         {
           title,
           content,

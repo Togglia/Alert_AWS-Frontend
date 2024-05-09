@@ -153,7 +153,7 @@ const Login = () => {
        */
 
       const response = await axios.post(
-        "http://43.200.156.108:4000/api/auth/signIn",
+        "http://43.202.245.191:4000/api/auth/signIn",
         {
           userEmail,
           userPassword,
