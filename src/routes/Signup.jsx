@@ -144,7 +144,7 @@ const Signup = () => {
        */
 
       const response = await axios.post(
-        "http://43.202.245.191:4000/api/auth/signUp",
+        "http://172.20.20.20:5000/api/auth/signUp",
         {
           userEmail,
           userPassword,
@@ -163,7 +163,7 @@ const Signup = () => {
 
       // 회원가입 성공 시 리다이렉트
       console.log("회원가입 성공");
-      navigate("/login");
+      navigate("/");
     } catch (error) {
       console.error("회원가입 실패:", error);
     }
